@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fazila Maher's Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#bio">My Bio</a></li>
+            <li><a href="#table">Course Table</a></li>
+            <li><a href="#form">Personal Information Form</a></li>
+        </ul>
+    </nav>
+
+    <!-- Bio Section -->
+    <section id="bio">
+        <h2>My Bio</h2>
+        <div class="bio">
+            <p>
+                My name is Fazila Maher, and I am currently pursuing a degree in Computer Science. I am passionate about designing and programming languages. Alongside my studies, I engage in various activities like guiding, book donation drives, and contributing to community welfare projects. My educational journey has equipped me with skills in web design, programming, and a deep understanding of computer science fundamentals.
+            </p>
+        </div>
+    </section>
+
+    <!-- Picture Section -->
+    <section id="picture">
+        <img src="./bbb.png" alt="My Picture">
+    </section>
+
+    <!-- Table Section -->
+    <section id="table">
+        <h2>Course Information</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Program</th>
+                <th>Credits</th>
+                <th>Instructor</th>
+            </tr>
+            <tr>
+                <td>Fazila</td>
+                <td>Re-Engineering</td>
+                <td>3</td>
+                <td>Sajid Hussain</td>
+            </tr>
+            <tr>
+                <td>Fazila</td>
+                <td>Computer Networks</td>
+                <td>4</td>
+                <td>Sabit Rahim</td>
+            </tr>
+            <tr>
+                <td>Fazila</td>
+                <td>Project Management</td>
+                <td>3</td>
+                <td>Chand Safi</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Form Section -->
+    <section id="form">
+        <h2>Submit Your Personal Information</h2>
+        <form action="/submit_form" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+
+            <label for="remarks">Remarks:</label>
+            <textarea id="remarks" name="remarks" rows="4"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+</body>
+</html>
